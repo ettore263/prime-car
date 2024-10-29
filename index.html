@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPrime - Lançamentos de Carros</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">SUV</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Sedan</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Pick-up</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Elétricos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Esportivos</a>
+        </li>
+      </ul>
+      <img src="img/LogoCarros.jpg" alt="Logo da AutoPrime" class="container__imagem">
+    </div>
+
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+        <p class="container__texto">Minha garagem</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Procurando seu próximo carro?</h2>
+    <p class="banner__texto">Veja nossos lançamentos exclusivos!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo carro?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/TeslaModelY.jpg"
+              alt="Tesla Model Y - Carro Elétrico da AutoPrime"></div>
+          <div class="swiper-slide"><img src="img/FordRaptor.jpg"
+              alt="Ford Raptor - Pick-up robusta da AutoPrime"></div>
+          <div class="swiper-slide"><img src="img/BMWM4.jpg" alt="BMW M4 - Carro Esportivo da AutoPrime"></div>
+          <div class="swiper-slide">
+            <img src="img/AudiRS7.jpg" alt="Audi RS7 - Sedan Esportivo" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/ToyotaHilux.jpg" alt="Toyota Hilux - Pick-up" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também goste de...</h3>
+            <h2 class="descrição__titulo-carro">Tesla Roadster</h2>
+            <p class="descrição__texto">
+              O carro elétrico mais rápido da AutoPrime, com autonomia de 1000 km.
+            </p>
+          </div>
+          <img src="img/TeslaRoadster.jpg" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar carro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar ao carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais Vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/FordRanger.jpg"
+              alt="Ford Ranger - Pick-up robusta da AutoPrime"></div>
+          <div class="swiper-slide"><img src="img/MercedesAMG.jpg" alt="Mercedes AMG GT - Esportivo da AutoPrime">
+          </div>
+          <div class="swiper-slide"><img src="img/AudiQ8.jpg" alt="Audi Q8 - SUV de luxo"></div>
+          <div class="swiper-slide"><img src="img/TeslaModelS.jpg" alt="Tesla Model S"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Destaque do Mês</h3>
+          <h2 class="descrição__titulo-carro">Audi E-Tron GT</h2>
+          <p class="descrição__texto">Um dos melhores carros elétricos esportivos do ano.</p>
+        </div>
+        <img src="img/AudiETron.jpg" class="descrição__imagem">
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar carro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Tópicos Visitados Recentemente</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">SUV</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Pick-up</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Carros Elétricos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Esportivos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Sedans</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Receba as últimas novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de novos modelos, ofertas e promoções exclusivas.
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo AutoPrime</h2>
+    <!-- Grupo de links relacionado a carros -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
